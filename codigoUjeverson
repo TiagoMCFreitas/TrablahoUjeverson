@@ -7,7 +7,7 @@ public class trabalhouje {
         Scanner leia = new Scanner(System.in);
 
         // Declaração de Variáveis
-
+        String nome = null;
         char opc, s;
         int maxLin = 3, maxCol = 4, maxLin2 = 4, maxCol2 = 1;
         double valoresPrato[][] = new double[maxLin][maxCol]; // valores dos condimentos
@@ -48,6 +48,10 @@ public class trabalhouje {
         // Apresentacao
         System.out.println("\t Bem vindo ao programa da jantinha:");
         System.out.println("\t\nProssiga e monte a sua jantinha como preferir!");
+
+        System.out.println("\tDigite o nome do cliente");
+        nome = leia.nextLine();
+
         do { // laço de repeticao
             System.out.println("\n\nDeseja alterar o preço das porções? ((n) - não (c) - continuar)"); // para oferecer
                                                                                                        // alteração do
@@ -173,7 +177,7 @@ public class trabalhouje {
             // Apresentar o valor total do prato para o cliente
             total = aux + arroz + carne + salada + tropeiro;
             aux = total;
-            System.out.printf("O valor do seu prato é: R$%.2f\n", total);
+            System.out.printf("O valor da sua conta " + nome + " é: R$%.2f\n", total);
             System.out.println(" \n\tValor dos condimentos");
 
             for (int i2 = 0; i2 < maxLin2; i2++) {
