@@ -78,7 +78,7 @@ public class trabalhouje {
 
                     System.out.println("novo preco: " + pratoPadrao[i][0]);
 
-                    System.out.println("Para sair digite (n)");
+                    System.out.println("Para sair digite (n) para alterar mais um condimento (c)");
                     s = leia.next().charAt(0);
 
                 } while (s != 'n');
